@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Snippet Cheatsheet</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>CSS Snippet Cheatsheet</h1>
+    <p class='description'>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for your to copy.</p>
+  </header>
+  <main>
+    <article class='class'>        
+      <ul>
+        <li>
+          <h2>Flexbox Row</h2>
+          <p class='article'>Use these three properties to create a Flexbox row layout.</p>
+          <pre class='row'>
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+          </pre>
+        </li>
+        <li>
+          <h2>Flexbox Column</h2>
+          <p class='article'>Use this to create a Flexbox column layout.</p>
+          <pre class='column'>
+.column {
+  display: flex;
+  flex-direction: column;
+}
+          </pre>
+        </li>
+        <li>
+          <h2>CSS Grid Layout</h2>
+          <p class='article'>Build a 12-column layout using CSS grid</p>
+          <pre class='grid'>
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns:
+repeat(12, 1fr);
+}
+          </pre>
+        </li>
+        <li>
+          <h2>Linear Gradients</h2>
+          <p class='article'>This will create a background linear gradient from top to bottom.</p>
+          <pre class='gradients'>
+.linear-gradient-background {
+  background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+  );
+}
+          </pre>
+        </li>
+        <li>
+          <h2>Box Transition Glow</h2>
+          <p class='article'>Use transition and box shadows to glow on hover.</p>
+          <pre class='glow'>
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.card-header:hover .card-header {
+    box-shadow: inset 0 0 8px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+}
+          </pre>
+          
+        </li>
+        <li>
+          <h2>Overlay Card with Title</h2>
+          <p class='article'>Use position properties and negative margins to raise elements higher than their natural string point.</p>
+          <pre class='overlay'>
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+          </pre>
+        </li>
+      </ul>
+    </article>
+  </main>
+  <footer>
+    <h3>Made with 💚 and CSS</h3>
+  </footer>
+</body>
+</html>
