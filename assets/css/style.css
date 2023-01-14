@@ -105,6 +105,10 @@ footer {
   justify-content: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 @media screen and (max-width: 992px) {
   ul {
     display: flex;
