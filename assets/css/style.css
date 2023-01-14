@@ -73,13 +73,6 @@ li:hover h2 {
   0 0 15px #3d71ff;
 }
 
-pre {
-  -webkit-user-select: all;
-  -moz-user-select: all;
-  -ms-user-select: all;
-  user-select: all; 
-}
-
 p.article {
   display: flex;
   flex-wrap: wrap;
@@ -101,6 +94,10 @@ pre {
   min-width: fit-content;
   color: white;
   align-items: center;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all; 
 }
 
 footer {
