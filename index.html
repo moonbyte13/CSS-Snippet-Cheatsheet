@@ -95,6 +95,23 @@ repeat(12, 1fr);
   user-select: all; 
 }</pre>
         </li>
+        <li>
+          <h2>Inset card Shadow</h2>
+          <p class='article'>The card shadow will disappear when it is replaced by the ::hover shadow</p>
+          <pre class='shadow'>
+.card {
+  box-shadow: 
+  rgba(0, 0, 0, 0.4)
+  0 300px inset;
+}
+
+.card:hover {
+  box-shadow:
+  inset 0 0 5px #DCA8FF,
+  0 0 15px #DCA8FF;
+}
+</pre>
+        </li>
       </ul>
     </article>
   </main>

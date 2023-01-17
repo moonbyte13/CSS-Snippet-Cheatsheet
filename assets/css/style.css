@@ -77,6 +77,7 @@ p.article {
   display: flex;
   flex-wrap: wrap;
   margin: 15px 5px;
+  max-width: 100%;
 }
 
 pre {
@@ -106,7 +107,6 @@ footer {
 }
 
 h3 {
-  text-align: center;
   margin-bottom: 25px;
 }
 
@@ -125,25 +125,28 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  * {
+  body {
     min-width: 330px;
   }
   ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: fit-content;
+    max-width: fit-content;
     align-items: center;
-    max-width: 760px;
   }
   li {
-    margin: 50px;
+    margin: 50px 0;
     width: 75%;
   }
   h2 {
     justify-content: center;
   }
   main {
+    justify-content: center;
+  }
+  footer {
+    width: 100%;
     justify-content: center;
   }
 }
